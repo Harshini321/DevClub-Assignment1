@@ -69,13 +69,17 @@ nav ul li a:hover{
     color:#eee ;
     font-weight: bold;
 }
-nav .fas{
-    display:none;
+.img{
+    float: right;
 }
+
 
 @media(max-width:700px){
      .text-box h1{
-         font-size: 20px;
+         font-size: 25px;
+     }
+     .text-box p{
+         font-size: 15px;
      }
      .nav-links ul li{
          display: block;
@@ -90,8 +94,12 @@ nav .fas{
          text-align: left;
          z-index: 2;
      }
+     .img{
+         display: none;
+     }
      
 }
+
 
 /*--OVERVIEW--*/
 
@@ -214,6 +222,57 @@ h3{
     margin-bottom: 15px;
     text-align: center;
 }
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table td{
+    padding: 12px 15px;
+    border: 3px solid #04345c;
+    text-align: center;
+    font-size:20px;
+}
+.table th{
+    padding: 12px 15px;
+    border:3px solid #b6dcfc;
+    text-align: center;
+    font-size: 25px;
+}
+.table th{
+    background-color: #04345c;
+    color: #fff;
+}
+.table td{
+    background-color: #b6dcfc;
+}
+@media(max-width:700px){
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+        
+    }
+    .table td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
 /*--FAQ'S--*/
 .faqs{
     width: 90%;
@@ -237,6 +296,9 @@ h3{
 .faqs-col h3{
     margin-top: 15px;
     text-align: center;
+}
+.faqs-col:hover{
+    box-shadow: 0 0 40px 0 rgba(0,0,0,0.2);
 }
 /*--about us--*/
 .aboutus{
