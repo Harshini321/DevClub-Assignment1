@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #04345c;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: #04345c;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    z-index: 1;
+}
+nav.nav-links{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+nav.nav-links p{
+    float:left;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+nav ul li a:hover{
+    color: #6bd4cd;
+}
+
+
+
+.text-box{
+    width: 90%;
+    color:#eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight: bold;
+}
+.text-box h1{
+    font-size: 55px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+    color:#eee ;
+    font-weight: bold;
+}
+nav .fas{
+    display:none;
+}
+
+@media(max-width:700px){
+     .text-box h1{
+         font-size: 20px;
+     }
+     .nav-links ul li{
+         display: block;
+     }
+     .nav-links{
+         position: absolute;
+         background: #04345c;
+         height: 100vh;
+         width: 200px;
+         top:0;
+         right: -200px;
+         text-align: left;
+         z-index: 2;
+     }
+     
+}
+
+/*--OVERVIEW--*/
+
+.overview{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+
+}
+p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 425;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.overview-col{
+    flex-basis: 31%;
+    background: #b6dcfc;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.1s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.overview-col:hover{
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*---tips---*/
+.tips{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.tips-col{
+    flex-basis: 46%;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow:hidden;
+    border: 3px solid #04345c;
+}
+.tips-col img{
+    width: 80%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:rgba(182,220,252,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #000;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/*---symptoms---*/
+.symptoms{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.symptoms-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    border: 3px solid #04345c;
+}
+.symptoms-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.symptoms-col p{
+    padding: 15px;
+    text-align: center;
+}
+.symptoms-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+/*--FAQ'S--*/
+.faqs{
+    width: 90%;
+    margin:auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.faqs-col{
+    flex-basis: 90%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    text-align: center;
+    background: #b6dcfc;
+    padding: 25px;
+    cursor: pointer;
+    display:flex;
+}
+.faqs-col p{
+    padding: 0;
+}
+.faqs-col h3{
+    margin-top: 15px;
+    text-align: center;
+}
+/*--about us--*/
+.aboutus{
+    width:100%;
+    text-align: center;
+    padding: 30px,0;
+}
+.aboutus h1{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+/*--youtube--*/
+.youtube{
+    width: 100%;
+    text-align: center;
+    padding: 30px,0;
+}
+.youtube h3{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.youtube h1{
+    font-size: 40px;
+    font-weight: 600;
+}
